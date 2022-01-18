@@ -20,7 +20,6 @@ public class CashbackHackServiceTest {
     }
     @Test
     public void shouldReturnHint1000ForAmount1000() {
-        //       void shouldCheckCashbackLimit() {
 
         CashbackHackService hack = new CashbackHackService();
 
@@ -47,7 +46,6 @@ public class CashbackHackServiceTest {
     public void shouldReturnHint1000ForAmount2000() {
 
         CashbackHackService hack = new CashbackHackService();
-        // I believe something is wrong here
 
         int amount = 2000;
         int expected = 1000;
@@ -60,7 +58,6 @@ public class CashbackHackServiceTest {
     public void shouldReturnHint1000ForAmount0() {
 
         CashbackHackService hack = new CashbackHackService();
-        // I believe something is wrong here
 
         int amount = 0;
         int expected = 1000;
@@ -68,5 +65,17 @@ public class CashbackHackServiceTest {
         int actual = hack.remain(amount);
 
         assertEquals(actual, expected);
+    }
+    @Test
+    public void shouldThrowAnExceptionForNegative() {
+
+        CashbackHackService hack = new CashbackHackService();
+
+        int amount = -1;
+
+// what exception is used for negative numbers?
+        assertThrows(IllegalArgumentException.class, () -> {
+            hack.remain(amount);
+        });
     }
 }

@@ -23,8 +23,10 @@ public class CashbackHackServiceTest {
 
         CashbackHackService hack = new CashbackHackService();
 
+// !! FAIL 220120        
+        
         int amount = 1000;
-        int expected = 1000;
+        int expected = 0;
 
         int actual = hack.remain(amount);
 
@@ -68,6 +70,8 @@ public class CashbackHackServiceTest {
     }
     @Test
     public void shouldThrowAnExceptionForNegative() {
+        
+// !! FAIL 220120
 
         CashbackHackService hack = new CashbackHackService();
 

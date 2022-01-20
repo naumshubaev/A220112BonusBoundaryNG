@@ -66,16 +66,16 @@ public class CashbackHackServiceTest {
 
         assertEquals(actual, expected);
     }
- /*   @Test
+    @Test
     public void shouldThrowAnExceptionForNegative() {
 
         CashbackHackService hack = new CashbackHackService();
 
         int amount = -1;
 
-// what exception is used for negative numbers?
+// what exception is suitable for negative values?
         assertThrows(IllegalArgumentException.class, () -> {
             hack.remain(amount);
         });
-    }*/
+    }
 }

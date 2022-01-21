@@ -6,7 +6,7 @@ group 'ru.netology'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 11
-git push
+
 repositories {
     mavenCentral()
 }
@@ -18,42 +18,3 @@ dependencies {
 test {
     useJUnit()
 }
-
-//plugins {
-//    id 'java'
-//}
-//
-//group 'ru.netology'
-//version '1.0-SNAPSHOT'
-//
-//repositories {
-//    mavenCentral()
-//}
-//
-//dependencies {
-//    testImplementation 'org.testng:testng:7.1.0'
-//}
-//
-//test {
-//    useTestNG()
-//}
-
-//plugins {
-//    id 'java'
-//}
-//
-//group 'ru.netology'
-//version '1.0-SNAPSHOT'
-//
-//repositories {
-//    mavenCentral()
-//}
-//
-//dependencies {
-//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-//}
-//
-//test {
-//    useJUnitPlatform()
-//}
